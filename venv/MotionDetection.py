@@ -32,7 +32,7 @@ while(cap.isOpened()):
             contCount = contCount+1
 
     print('Moving People Count : '+ str(contCount))
-    cv2.putText(frame1,"MovingPeopleConunt : {}".format(str(contCount)),(10,50),cv2.FONT_HERSHEY_SIMPLEX,2,(0,0,255),3)
+    cv2.putText(frame1,"MovingPeopleConunt : {}".format(str(contCount)),(20,50),cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
     # cv2.drawContours(frame1, contours, -1, (0, 255, 0), 2)
 
     cv2.imshow('VideoFeed',frame1)
